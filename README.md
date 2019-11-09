@@ -15,6 +15,8 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+|text|text||
+|image|
 ### Association
 - belongs_to :user
 - belongs_to :group
