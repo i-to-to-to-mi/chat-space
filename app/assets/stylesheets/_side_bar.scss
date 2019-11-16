@@ -38,21 +38,19 @@
 .side_groups {
   height: calc(100% - 100px);
   background-color: #2f3e51;
-  padding: 20px 20px 0;
+  
   overflow: scroll;
   box-sizing: border-box;
   .group {
-    padding: 0;
+    padding: 20px 20px 0 20px;
     margin-bottom: 40px;
       &__name {
         font-size: 15px;
-        font-weight: bold;
         color: white;
         margin-bottom: 5px;
         }
       &__message {
         font-size: 11px;
-        font-weight: bold;
         color: white;
         }
       }
