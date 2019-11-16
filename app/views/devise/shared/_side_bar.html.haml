@@ -1,15 +1,15 @@
 .side
   .side_header
     .header-box
-      .header-box__user-name
-        sample_name
+      %h3.header-box__user-name
+        = current_user.name
       %ul.header-box__box-icon
         %li.header-box__box-icon__newgroup
           =link_to 'URL' do
             = fa_icon 'edit'
         %li.header-box__box-icon__fix
-          =link_to 'URL' do
-            = fa_icon 'cog'
+          = link_to edit_user_path(current_user) do
+            = fa_icon 'cog', class: 'icon'
   .side_groups
     .group        
       .group__name
