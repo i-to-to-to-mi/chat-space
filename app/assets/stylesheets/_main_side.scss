@@ -43,6 +43,7 @@
   padding-top: 46px;
   background-color: #fafafa;
   overflow: scroll;
+  box-sizing: border-box;
     &__box{
       padding-bottom: 40px;
       &__title{
@@ -70,6 +71,7 @@
     height: 90px;
     padding: 40px 40px 20px 40px;
     background-color: #ddd;
+    box-sizing: border-box;
     form{
       display: flex;
       margin: auto;
