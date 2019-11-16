@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20191116070107) do
 
   create_table "group_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -28,9 +27,6 @@ ActiveRecord::Schema.define(version: 20191116070107) do
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_groups_on_name", unique: true, using: :btree
   end
-=======
-ActiveRecord::Schema.define(version: 20191116044910) do
->>>>>>> master
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                   default: "", null: false
