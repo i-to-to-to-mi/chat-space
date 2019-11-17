@@ -69,45 +69,44 @@
   }
   .form{
     height: 90px;
-    padding: 40px 40px 20px 40px;
+    padding: 20px 40px;
     background-color: #ddd;
     box-sizing: border-box;
-    form{
+    .new_message{
       display: flex;
-      margin: auto;
-    }
       .input-box{
-        display: flex;
-        width: 100%;
         position: relative;
-        .message-box{
+        width: 100%;
+       
+        .input-box__text{
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
           color: #434a54;
           border-style: none;
+          box-sizing: border-box;
         }
-          .input__image{
+        .input__image{
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
-            right: 120px;
+            right: 10px;
             cursor: pointer;
-            position: absolute;
+            }
           }
-    .send-box{
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
+      .send-box{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        position: relative;
+        cursor: pointer;
+                }
+              }
+            }
           }
-        }
-      }
-    }
-
 .form-imagefile{
   display: none;
 }
