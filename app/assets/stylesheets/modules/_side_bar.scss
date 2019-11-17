@@ -38,12 +38,14 @@
 .side_groups {
   height: calc(100% - 100px);
   background-color: #2f3e51;
-  
   overflow: scroll;
   box-sizing: border-box;
   .group {
     padding: 20px 20px 0 20px;
     margin-bottom: 40px;
+    a {
+      text-decoration: none;
+    }
       &__name {
         font-size: 15px;
         color: white;
