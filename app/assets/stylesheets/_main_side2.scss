@@ -106,3 +106,13 @@
 .form-imagefile{
   display: none;
 }
+
+
+// -# .form
+// -#   %form
+// -#   .input-box{id:"new_message", enctype:"multipart/form-data", method:"post"}
+// -#     %input{placeholder:"type a message",type:"text",name:"message", class:"message-box"}
+// -#       %label{class: "input__image", for:"image"}
+// -#         = fa_icon 'image'
+// -#         %input.form-imagefile{type: "file", id:"image"}
+// -#     %input{type: "submit", class:"send-box", value:"send"}

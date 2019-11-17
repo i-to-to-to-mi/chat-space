@@ -2,27 +2,23 @@
   .main__header
     .left__box
       .left__box__current-box
-        group-name
+        = @group.name
       .left__box__member-list
         Member:
         .left__box__member-list__member
-          username
+          - @group.users.each do |user|
+            = user.name
     .edit-btn
-      Edit
+      = link_to edit_group_path(@group) do
+        Edit
   .message
-    .message__box
-      .message__box__title
-        .talker
-          username
-        .date
-          wrighting_date
-      .message__box__text
-        text
+    = render @messages
   .form
-    %form
-    .input-box{id:"new_message", enctype:"multipart/form-data", method:"post"}
-      %input{placeholder:"type a message",type:"text",name:"message", class:"message-box"}
-        %label{class: "input__image", for:"image"}
-          = fa_icon 'image'
-          %input.form-imagefile{type: "file", id:"image"}
-      %input{type: "submit", class:"send-box", value:"send"}
+    = form_for [@group, @message] do |f|
+      .input-box
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input__image' do
+          = icon('fa', 'image', class: 'icon')
+          = f.file_field :image, class: 'form-imagefile'
+      = f.submit 'Send', class: 'send-box'
+
