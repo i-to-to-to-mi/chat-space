@@ -10,6 +10,9 @@
     overflow: scroll;
     .left__box{
       margin-top: 35px;
+      a {
+        text-decoration: none;
+      }
       &__current-box{
         font-size: 20px;
         color: #333;
@@ -77,7 +80,6 @@
       .input-box{
         position: relative;
         width: 100%;
-       
         .input-box__text{
           height: 50px;
           width: 100%;

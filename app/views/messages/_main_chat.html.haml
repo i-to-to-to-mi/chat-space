@@ -2,11 +2,12 @@
   .main__header
     .left__box
       .left__box__current-box
-        group-name
+        = @group.name
       .left__box__member-list
         Member:
         .left__box__member-list__member
-          username
+          - @group.users.each do |user|
+            = user.name
     .edit-btn
       Edit
   .message
