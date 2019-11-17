@@ -10,14 +10,7 @@
     .edit-btn
       Edit
   .message
-    .message__box
-      .message__box__title
-        .talker
-          username
-        .date
-          wrighting_date
-      .message__box__text
-        text
+    = render @messages
   .form
     = form_for [@group, @message] do |f|
       .input-box
