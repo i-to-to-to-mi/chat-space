@@ -1,7 +1,11 @@
 $(function(){
+
   function buildHTML(message){
-    if (message.image) {
-      var html =//メッセージに画像が含まれる場合のHTMLを作る
+    var image= message.image ? 
+    `<img src=${message.image}>
+    ` : "";
+
+      var html =
       `<div class="message__box">
         <div class="message__box__title">
           <div class="talker">
@@ -16,29 +20,10 @@ $(function(){
             ${message.content}
           </p>
         </div>
-          <img src=${message.image}>
+          ${image}
       </div>`
       return html;
-    } else {
-      var html = //メッセージに画像が含まれない場合のHTMLを作る
-      `<div class="message__box">
-        <div class="message__box__title">
-          <div class="talker">
-            ${message.user_name}
-          </div>
-          <div class="date">
-            ${message.date}
-          </div>
-        </div>
-        <div class="message__box__text">
-          <p class="message__box__text__content">
-            ${message.content}
-          </p>
-        </div>
-      </div>`
-    return html;
-  };
-}
+    }
 
   $('#new_message').on('submit',function(e){
     e.preventDefault();
@@ -53,10 +38,10 @@ $(function(){
       contentType: false
     })
     .done(function(message){
-      var html = buildHTML(message);
-      $('.message').append(html);
-      $('.message').animate({ scrollTop: $('.message')[0].scrollHeight});
-      $('form')[0].reset();
+      var html=buildHTML(message);
+        $('.message').append(html);
+        $('.message').animate({ scrollTop: $('.message')[0].scrollHeight});
+        $('form')[0].reset();
     })
     .fail(function(){
       alert('error');
