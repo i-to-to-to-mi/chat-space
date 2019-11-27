@@ -12,7 +12,7 @@ $(function(){
             ${message.user_name}
           </div>
           <div class="date">
-            ${message.date}
+            ${message.created_at}
           </div>
         </div>
         <div class="message__box__text">
