@@ -71,7 +71,6 @@ $(function(){
     messages.forEach(function (message) {//配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
     insertHTML = buildHTML(message);//メッセージが入ったHTMLを取得
     $('.message').append(insertHTML);//メッセージを追加
-      // $('.messages').animate({ scrollTop: $('.message')[0].scrollHeight},'fast');
     });
     $('.message').animate({ scrollTop: $('.message')[0].scrollHeight},'fast');
   })
@@ -79,8 +78,6 @@ $(function(){
       alert('自動更新に失敗しました');//ダメだったらアラートを出す    
     });
     };
-  // setInterval(reloadMessages, 100);//7000ミリ秒ごとにreloadMessagesという関数を実行し自動更新を行う。
-  // if (window.location.href.match(/\/groups\/\d+\/messages/)){//今いるページのリンクが/groups/グループID/messagesのパスとマッチすれば以下を実行。
     };
     setInterval(reloadMessages, 7000);//7000ミリ秒ごとにreloadMessagesという関数を実行し自動更新を行う。
   });
