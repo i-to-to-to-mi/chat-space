@@ -73,12 +73,11 @@ $(function(){
     $('.message').append(insertHTML);//メッセージを追加
     });
     $('.message').animate({ scrollTop: $('.message')[0].scrollHeight},'fast');
-  })
+    })
     .fail(function() {
       alert('自動更新に失敗しました');//ダメだったらアラートを出す    
-    });
+      });
     };
-    };
-    setInterval(reloadMessages, 7000);//7000ミリ秒ごとにreloadMessagesという関数を実行し自動更新を行う。
-  });
-// })
+  };
+  setInterval(reloadMessages, 7000);//7000ミリ秒ごとにreloadMessagesという関数を実行し自動更新を行う。
+});
