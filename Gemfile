@@ -44,7 +44,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
-  
+
   gem 'capistrano'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
@@ -75,5 +75,6 @@ gem "font-awesome-rails"
 gem 'devise'
 gem 'erb2haml'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 # gem 'turbolinks', '~> 5'
