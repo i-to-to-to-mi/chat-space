@@ -89,7 +89,6 @@ li {
     content: "";
     clear: both;
     display: block;
-    justify-content: space-between;
   }
   &__name {
     float: left;
@@ -100,6 +99,7 @@ li {
     cursor: pointer;
     &--add {
       color: #38aef0;
+      float: right;
     }
     &--remove {
       color: #f05050;
