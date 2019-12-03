@@ -89,6 +89,7 @@ li {
     content: "";
     clear: both;
     display: block;
+    justify-content: space-between;
   }
   &__name {
     float: left;
