@@ -67,7 +67,7 @@ group :development do
 end
 
 group :production do
-  gem 'unicorn', '5.4.1'
+  gem 'unicorn', '6.0.0'
 end
 
 
